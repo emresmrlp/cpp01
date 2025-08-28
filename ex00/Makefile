@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ysumeral < ysumeral@student.42istanbul.    +#+  +:+       +#+         #
+#    By: ysumeral < ysumeral@student.42istanbul.com +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/08/28 12:29:43 by ysumeral          #+#    #+#              #
-#    Updated: 2025/08/28 12:30:42 by ysumeral         ###   ########.fr        #
+#    Updated: 2025/08/28 16:47:18 by ysumeral         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ SRC =	main.cpp \
 		randomChump.cpp \
 		Zombie.cpp
 OBJ = $(SRC:.cpp=.o)
-NAME = BraiiiiiiinnnzzzZ
+NAME = BrainZzz
 
 all: $(NAME)
 
