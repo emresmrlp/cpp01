@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ysumeral < ysumeral@student.42istanbul.com +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/28 16:29:54 by ysumeral          #+#    #+#             */
-/*   Updated: 2025/08/28 19:36:15 by ysumeral         ###   ########.fr       */
+/*   Created: 2025/08/28 19:17:42 by ysumeral          #+#    #+#             */
+/*   Updated: 2025/08/28 21:18:15 by ysumeral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,24 @@
 
 #include <iostream>
 
-class Zombie
+enum Level
 {
-public:
-	Zombie();
-	Zombie(std::string name);
-	std::string getName(void) const;
-	void		setName(std::string name);
-	void 		announce(void);
-	~Zombie();
-private:
-	std::string	name;
+	DEBUG,
+	INFO,
+	WARNING,
+	ERROR,
+	UNKNOWN
 };
 
-Zombie* zombieHorde(int N, std::string name);
+class Harl
+{
+public:
+	Harl();
+	int		getLevel(std::string level);
+	void	complain(std::string level);
+private:
+	void	debug(void);
+	void	info(void);
+	void	warning(void);
+	void	error(void);
+};

@@ -6,7 +6,7 @@
 /*   By: ysumeral < ysumeral@student.42istanbul.com +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 16:29:19 by ysumeral          #+#    #+#             */
-/*   Updated: 2025/08/28 17:13:24 by ysumeral         ###   ########.fr       */
+/*   Updated: 2025/08/28 19:36:37 by ysumeral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,15 @@ Zombie::Zombie(void)
 
 Zombie::~Zombie(void)
 {
-	return ;	
+	std::cout << "Zombie " << this->name << " was destroyed by Rick Grimes! x_x" << std::endl;
 }
 
-Zombie::Zombie(std::string name)
+Zombie::Zombie(std::string name) : name(name)
+{
+	return ;
+}
+
+void Zombie::setName(std::string name)
 {
 	this->name = name;
 }

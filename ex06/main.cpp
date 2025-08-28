@@ -5,25 +5,37 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ysumeral < ysumeral@student.42istanbul.com +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/28 13:03:53 by ysumeral          #+#    #+#             */
-/*   Updated: 2025/08/28 19:29:36 by ysumeral         ###   ########.fr       */
+/*   Created: 2025/08/28 19:42:25 by ysumeral          #+#    #+#             */
+/*   Updated: 2025/08/28 21:19:39 by ysumeral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "Harl.hpp"
 
-int main(void)
+int main(int argc, char **argv)
 {
-	Zombie *foo;
-	Zombie *emre;
-
-	std::cout << "-> Zombie Foo, Zombie Emre and Zombie Yunus running..." << std::endl;
-	foo = newZombie("Foo");
-	emre = newZombie("Emre");
-	foo->announce();
-	delete foo;
-	emre->announce();
-	delete emre;
-	randomChump("Yunus");
+	Harl		harl;
+	std::string	level;
+	
+	if (argc == 2)
+	{
+		level = argv[1];
+		switch (harl.getLevel(argv[1]))
+		{
+			case DEBUG:
+				harl.complain("DEBUG");
+			case INFO:
+				harl.complain("INFO");
+			case WARNING:
+				harl.complain("WARNING");
+			case ERROR:
+				harl.complain("ERROR");
+				break;
+			default:
+				std::cerr << "[ Probably complaining about insignificant problems ]" << std::endl;
+		}
+	}
+	else
+		std::cerr << "Correct usage: ./harlFilter <level>" << std::endl;
 	return (0);
 }

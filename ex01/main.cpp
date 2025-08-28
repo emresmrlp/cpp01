@@ -6,7 +6,7 @@
 /*   By: ysumeral < ysumeral@student.42istanbul.com +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 16:27:50 by ysumeral          #+#    #+#             */
-/*   Updated: 2025/08/28 18:31:38 by ysumeral         ###   ########.fr       */
+/*   Updated: 2025/08/28 19:39:52 by ysumeral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int main(void)
 		zombies[i].announce();
 	for (int i = 0; i < twdZombiesCount; i++)
 		twdZombies[i].announce();
-	std::cout << "-> Ohh, they are going to the other side. We can end the program. :)"
+	std::cout << "-> They are going to the other side. We can end the program… Rick Grimes delivers the final blow with his gun >:)”"
 		<< std::endl;
 	delete[] zombies;
 	delete[] twdZombies;
