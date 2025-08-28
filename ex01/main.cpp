@@ -6,7 +6,7 @@
 /*   By: ysumeral < ysumeral@student.42istanbul.com +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 16:27:50 by ysumeral          #+#    #+#             */
-/*   Updated: 2025/08/28 16:47:09 by ysumeral         ###   ########.fr       */
+/*   Updated: 2025/08/28 18:31:38 by ysumeral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,5 @@ int main(void)
 		<< std::endl;
 	delete[] zombies;
 	delete[] twdZombies;
+	return (0);
 }

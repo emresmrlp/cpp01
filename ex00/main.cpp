@@ -6,7 +6,7 @@
 /*   By: ysumeral < ysumeral@student.42istanbul.com +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 13:03:53 by ysumeral          #+#    #+#             */
-/*   Updated: 2025/08/28 16:43:16 by ysumeral         ###   ########.fr       */
+/*   Updated: 2025/08/28 18:31:46 by ysumeral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,4 +28,5 @@ int main(void)
 		<< std::endl;
 	delete foo;
 	delete emre;
+	return (0);
 }

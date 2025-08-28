@@ -6,7 +6,7 @@
 /*   By: ysumeral < ysumeral@student.42istanbul.com +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 17:07:51 by ysumeral          #+#    #+#             */
-/*   Updated: 2025/08/28 18:17:40 by ysumeral         ###   ########.fr       */
+/*   Updated: 2025/08/28 18:31:23 by ysumeral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,5 @@ int main()
 	foo.attack();
 	emre.attack();
 	std::cout << "-> Fight ended, see u soon!!" << std::endl;
-	return 0;
+	return (0);
 }

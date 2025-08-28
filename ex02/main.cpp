@@ -6,7 +6,7 @@
 /*   By: ysumeral < ysumeral@student.42istanbul.com +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 16:51:21 by ysumeral          #+#    #+#             */
-/*   Updated: 2025/08/28 17:03:52 by ysumeral         ###   ########.fr       */
+/*   Updated: 2025/08/28 18:31:31 by ysumeral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,4 +24,5 @@ int main(void)
 	std::cout << "Memory address of stringREF: " << &stringREF << std::endl;
 	std::cout << "Value pointed to by stringPTR: " << *stringPTR << std::endl;
 	std::cout << "Valeu pointed to by stringREF: " << stringREF << std::endl;
+	return (0);
 }
