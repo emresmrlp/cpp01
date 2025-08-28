@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ysumeral < ysumeral@student.42istanbul.    +#+  +:+       +#+        */
+/*   By: ysumeral < ysumeral@student.42istanbul.com +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 14:27:45 by ysumeral          #+#    #+#             */
-/*   Updated: 2025/08/28 16:04:24 by ysumeral         ###   ########.fr       */
+/*   Updated: 2025/08/28 17:13:12 by ysumeral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,7 @@ void Zombie::announce(void)
 	std::string zombieName;
 
 	zombieName = getName();
-	if (zombieName.compare("Foo") == 0)
-		std::cout << "Foo";
-	else
-		std::cout << "<" << zombieName << ">";
-	std::cout << ": BraiiiiiiinnnzzzZ..." << std::endl;
+	std::cout << zombieName << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }
 
 std::string Zombie::getName(void) const
